@@ -1,0 +1,121 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tables Page</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="app">
+
+  <header class="app-header">
+    <a href="/" class="app-header__logo">HQ Admin</a>
+    <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"><span
+        class="fa fa-bars"></span></a>
+    <ul class="app-nav">
+      <li class="app-search">
+        <input class="app-search__input" type="search" placeholder="search">
+        <button class="app-search__button"><i class="fa fa-search"></i></button>
+      </li>
+      <li class="dropdown">
+        <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Menu">
+          <i class="fa fa-user fa-lg"></i>
+        </a>
+        <ul class="dropdown-menu settings-menu dropdown-menu-right">
+          <li><a class="dropdown-item" href=""><i class="fa fa-cog"></i> Settings</a></li>
+          <li><a class="dropdown-item" href=""><i class="fa fa-user"></i> Profile</a></li>
+          <li><a class="dropdown-item" href=""><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </header>
+  <aside class="app-sidebar">
+    <ul class="app-menu">
+      <li><a class="app-menu__item" href="/index.html">Index</a></li>
+      <li><a class="app-menu__item" href="/cards.html">Cards</a></li>
+      <li><a class="app-menu__item" href="/forms.html">Forms</a></li>
+      <li><a class="app-menu__item" href="/tables.html">Tables</a></li>
+    </ul>
+  </aside>
+  <main class="app-content">
+    <div class="app-title">
+      <h5>Tables Page</h5>
+    </div>
+
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr class="table-success">
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="table-responsive">
+
+
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+  </main>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.app-header{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    width:100%;
+    display:flex;
+    background-color:$primary-hex;
+    z-index:1050;
+    padding-right:15px;
+}
+.app-header__logo{
+    flex:1 0 auto;
+    color:#fff;
+    font-family:$app-font-serif;
+    text-align:center;
+    font-size:26px;
+    padding: 0 15px;
+    line-height:50px;
+    @media(min-width:768px){
+        flex: 0 0 auto;
+        display:block;
+        width:230px;
+    }
+}
+.app-search{
+    position:relative;
+    display:flex;
+    align-self:center;
+    margin-right:15px;
+    @media(max-width:480px){
+        display:none;
+    }
+    
+}
+
+.app-search__input{
+    border:0;
+    padding:5px 10px;
+    padding-right:30px;
+    border-radius:2px;
+    background-color:rgba(255,255,255,.8);
+
+}
+.app-search__button{
+    position:absolute;
+    right:0;
+    top:10px;
+    padding:0 10px;
+    border:0;
+    color:rgba(0,0,0,.8);
+    background:none;
+    cursor:pointer;
+}
+
+.app-nav{
+    @include list-unstyled();
+    display:flex;
+    margin-bottom: 0;
+    justify-content: flex-end;
+    @media(min-width:768px){
+        flex:1 0 auto;
+    }
+}
+
+.app-nav__item {
+	display: block;
+	padding: 18px;
+	line-height: 20px;
+	color: #fff;
+	transition: background-color 0.3s ease;
+	&:hover,
+	&:focus {
+		background: rgba(0, 0, 0, 0.1);
+		color: #f6f6f6;
+	}
+}
+
+.app-sidebar__toggle{
+    padding:0 15px;
+    color:#fff;
+    line-height:50px;
+    transition:background-color 0.3s ease;
+    &:focus,
+    &:hover{
+        color:#fff;
+        background-color:rgba(0, 0, 0, 0.1);
+        text-decoration:none;
+    }
+    @media(max-width:767px){
+        order:-1;
+    }
+}
+
+.app-sidebar__toggle > span{
+    display:inline-block;
+    padding:15px;
+}
+
+
+
+
+
+
+
+

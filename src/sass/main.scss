@@ -1,0 +1,27 @@
+/*!
+* HQ Admin - Free Responsive Bootstrap Admin Template
+* Author: Andrew Wilson
+* https://youtube.com/c/FollowAndrew
+* Version: 0.1
+* Description: HQ Admin is a fully responsive admin template based off of Bootstrap 4.  
+* This template was created for the YouTube video tutorial on freecodeamp
+*/
+
+// Bootstrap
+@import "_vars.scss";
+@import "_customize-bootstrap.scss";
+@import "~bootstrap/scss/bootstrap";
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+// App Layout
+
+@import 'app/components/app';
+@import 'app/components/app-header';
+@import 'app/components/app-sidebar';
+@import 'app/components/app-sidebar-mini';
+@import 'app/components/app-title';

@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HQ Admin - Responsive Bootstrap Admin Theme </title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="app">
+
+    <header class="app-header">
+        <a href="/" class="app-header__logo">HQ Admin</a>
+        <a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"><span
+                class="fa fa-bars"></span></a>
+        <ul class="app-nav">
+            <li class="app-search">
+                <input class="app-search__input" type="search" placeholder="search">
+                <button class="app-search__button"><i class="fa fa-search"></i></button>
+            </li>
+            <li class="dropdown">
+                <a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Menu">
+                    <i class="fa fa-user fa-lg"></i>
+                </a>
+                <ul class="dropdown-menu settings-menu dropdown-menu-right">
+                    <li><a class="dropdown-item" href=""><i class="fa fa-cog"></i> Settings</a></li>
+                    <li><a class="dropdown-item" href=""><i class="fa fa-user"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href=""><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+    <aside class="app-sidebar">
+        <ul class="app-menu">
+            <li><a class="app-menu__item" href="/index.html">Index</a></li>
+            <li><a class="app-menu__item" href="/cards.html">Cards</a></li>
+            <li><a class="app-menu__item" href="/forms.html">Forms</a></li>
+            <li><a class="app-menu__item" href="/tables.html">Tables</a></li>
+        </ul>
+    </aside>
+    <main class="app-content">
+        <div class="app-title">
+            <h5>Index Page</h5>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="card">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
